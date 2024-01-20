@@ -1,0 +1,31 @@
+@import "../../styles/vars.scss";
+
+.result {
+    text-align: center;
+    text-decoration: underline;
+
+    h3 {
+        font-size: 24px;
+        letter-spacing: 1.4px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: 500;
+
+        span {
+            color: $primary;
+            font-size: 25px;
+        }
+    }
+    button{
+        font-size: 20px;
+        border: 1px solid $disabled;
+        border-radius: 10px;
+        color: white;
+        background-color: rgb(45, 45, 114);
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+}

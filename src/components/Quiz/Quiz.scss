@@ -1,0 +1,78 @@
+@import "../../styles/vars.scss";
+
+
+.quiz-container {
+    background: $bg;
+    border-radius: 4px;
+    margin: 70px 45px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    height: 5%;
+
+
+    .active-question-no {
+        font-size: 25px;
+        font-weight: 500;
+        color: $primary;
+    }
+
+    .total-question {
+        font-size: 20px;
+        font-weight: 500;
+        color: $disabled;
+    }
+
+    h2{
+        margin-left: 30px;
+    }
+
+    ol {
+        margin-top: 20px;
+        margin-left: 30px;
+
+        li {
+            
+            font-size: 15px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            width: 300px;
+        }
+        @media screen and (max-width: 800px) {
+            li {
+                width: 200px;
+            }
+        }
+
+        .selected-answer {
+            background: $primary;
+            border: 1px solid $accent;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            font-size: 25px;
+            background: rgb(73, 205, 104);
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px 15px;
+            margin-top: 20px;
+
+            &:disabled {
+                background: $bg-accent;
+                color: $disabled;
+                cursor: not-allowed;
+            }
+        }    
+    }
+    
+
+}
